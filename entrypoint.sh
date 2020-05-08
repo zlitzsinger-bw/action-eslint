@@ -20,5 +20,5 @@ if [ "${INPUT_REPORTER}" == 'github-pr-review' ]; then
 else
   # github-pr-check,github-check (GitHub Check API) doesn't support markdown annotation.
   $(npm bin)/eslint -f="stylish" ${INPUT_ESLINT_FLAGS:-'.'} \
-    | reviewdog -f="eslint" reporter="${INPUT_REPORTER:-github-pr-check}" -level="${INPUT_LEVEL}" -filter-mode="${INPUT_FILTER_MODE}" 
+    | reviewdog -f="eslint" -reporter="${INPUT_REPORTER:-github-pr-check}" -level="${INPUT_LEVEL}" -filter-mode="${INPUT_FILTER_MODE}" 
 fi
