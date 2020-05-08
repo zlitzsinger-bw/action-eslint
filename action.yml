@@ -20,7 +20,7 @@ inputs:
   workdir:
     description: "The directory from which look for and run eslint. Default '.'"
     default: "."
-  filter-mode:
+  filter_mode:
     description: "The mode that reviewdog uses to filterr results. Default 'added'"
     default: "added"
 runs:

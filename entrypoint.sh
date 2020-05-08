@@ -12,7 +12,7 @@ fi
 
 $(npm bin)/eslint --version
 
-echo "filter mode: ${INPUT_FILTER_MODE}"
+echo "filter mode: ${INPUT_FILTER_MODE} ${INPUT_FILTER_MODE}"
 
 if [ "${INPUT_REPORTER}" == 'github-pr-review' ]; then
   # Use jq and github-pr-review reporter to format result to include link to rule page.
